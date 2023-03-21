@@ -1,0 +1,11 @@
+name: FastShop-code
+version: '${version}'
+main: com.wenkrang.fastshopcode.FastShop_code
+api-version: 1.19
+commands:
+  fs:
+    description: 打开 --> Fastshop主菜单
+    usage: /fs
+  fsinfo:
+    description: FastShop --> 版本说明
+    usage: /fsinfo
