@@ -1,6 +1,10 @@
-FastShop-快速商店
+FastShop --> 快速商店
 
-作者:wenk cat
-(虽然cat没写啥)
+作者:wenk < == > cat
+|                                            (虽然cat没写啥)
 
-这是一个一个minecraft spigot在线商店
+|这是一个一个minecraft spigot在线商店
+///////////////          简介               ////////////
+现在是开发阶段没有什么功能（悲
+
+版本 --> 0.01
