@@ -9,6 +9,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+
 
 //初始化监听器
 public class event implements Listener {
@@ -35,6 +37,18 @@ public class event implements Listener {
                 back_meta.setDisplayName("");
                 back.setItemMeta(back_meta);
 
+                //下一步
+                //TODO:打开命名与设置价格界面 （脑子疼 = =）
+                ItemStack next = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
+                ItemMeta next_meta = next.getItemMeta();
+                next_meta.setDisplayName("§a下一步");
+
+                ArrayList<String> next_lore = new ArrayList<>();
+                next_lore.add("");
+                next_lore.add("§8|上架你的商品！");
+                next_lore.add("§8|来到最后确认界面 awa");
+                next_meta.setLore(next_lore);
+                next.setItemMeta(next_meta);
                 //渲染物品
                 GUI.setItem(0, back);
                 GUI.setItem(1, back);
@@ -43,19 +57,10 @@ public class event implements Listener {
                 GUI.setItem(4, back);
                 GUI.setItem(5, back);
                 GUI.setItem(6, back);
-                GUI.setItem(7, back);
+                GUI.setItem(7, next);
                 GUI.setItem(8, back);
 
-                GUI.setItem(14, back);
-                GUI.setItem(15, back);
-                GUI.setItem(16, back);
-                GUI.setItem(17, back);
-                GUI.setItem(18, back);
-                GUI.setItem(19, back);
-                GUI.setItem(20, back);
-                GUI.setItem(21, back);
-                GUI.setItem(22, back);
-                GUI.setItem(23, back);
+
             }
 
             event.setCancelled(true); //取消点击事件
