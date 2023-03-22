@@ -1,4 +1,4 @@
-package com.wenkrang.fastshopcode;
+package com.wenkrang.fastshopcode.event;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 
 //初始化监听器
-public class event implements Listener {
+public class addevent implements Listener {
     @EventHandler
     public void gui(InventoryClickEvent event) {
         //防止玩家拿走物品
