@@ -1,5 +1,6 @@
 package com.wenkrang.fastshopcode;
 
+import com.wenkrang.fastshopcode.event.addevent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class FastShop_code extends JavaPlugin {
@@ -15,7 +16,7 @@ public class FastShop_code extends JavaPlugin {
         //检测配置文件与存档是否存在
 
         //注册监听器
-        getServer().getPluginManager().registerEvents(new event(), this);
+        getServer().getPluginManager().registerEvents(new addevent(), this);
     }
 
     @Override
